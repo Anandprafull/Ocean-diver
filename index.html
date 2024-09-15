@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script type="text/javascript" src="script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Ocean Cleanup</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="score-box row">
+        <div class="score-box-left col-sm-6"></div>
+        <div class="col-sm-4"></div>
+        <div class="level-box col-sm-2"></div>
+      </div>
+    </div>
+    <div class="background container">
+      <div class="start-box">
+        <div class="welcome">
+          <h1>Ocean Cleanup</h1>
+          <br />
+          <p>
+            Welcome and thank you for joiing the ocean cleanup!<br /><br />
+            Want to help clean the ocean from plastic bags, bottles and coffee
+            cups?<br />
+            Click on the button to learn how.
+          </p>
+          <br />
+          <button id="welcome-button" class="btn btn-default btn-lg">
+            LET'S GO
+          </button>
+          <button id="returning-button" class="btn btn-default btn-lg">
+            RETURNING PLAYER
+          </button>
+        </div>
+
+        <div class="instructions">
+          <h1>Instructions</h1>
+          <br />
+          <p>
+            Move the diver up and down using the arrows on your keyboard<br /><br />
+          </p>
+          <div class="row">
+            <div class="col-sm-4"></div>
+            <img src="./images/arrows.png" class="col-sm-4" />
+            <div class="col-sm-4"></div>
+          </div>
+          <br />
+          <button id="instructions-button" class="btn btn-default btn-lg">
+            GOT IT
+          </button>
+        </div>
+
+        <div class="instructions2">
+          <h1>Instructions</h1>
+          <br />
+          <p>Collect all the pieces of plastic...</p>
+          <br />
+          <div class="row">
+            <div class="col-sm-2"></div>
+            <img src="./images/plasticwhite1.png" class="col-sm-2" />
+            <img src="./images/plasticwhite2.png" class="col-sm-2" />
+            <img src="./images/plasticwhite3.png" class="col-sm-2" />
+            <img src="./images/plasticwhite4.png" class="col-sm-2" />
+            <div class="col-sm-2"></div>
+          </div>
+          <br />
+          <p>... but make sure to avoid the fire corals.</p>
+          <br />
+          <div class="row">
+            <div class="col-sm-2"></div>
+            <div class="col-sm-2"></div>
+            <img src="./images/coral.png" class="col-sm-2" />
+            <img src="./images/coral.png" class="col-sm-2" />
+            <div class="col-sm-2"></div>
+            <div class="col-sm-2"></div>
+          </div>
+          <br />
+          <button id="instructions2-button" class="btn btn-default btn-lg">
+            OKAY
+          </button>
+        </div>
+
+        <div class="form-group enter-name">
+          <label for="name"><h1>Enter your name:</h1> </label><br /><input
+            type="text"
+            name="name"
+            class="form-control"
+          /><br />
+          <button id="to-start-button" class="btn btn-default btn-lg">
+            BACK TO START
+          </button>
+          <button id="enter-name-button" class="btn btn-default btn-lg">
+            NEXT
+          </button>
+        </div>
+
+        <div class="form-group pick-diver">
+          <label for="diver"><h1>Pick a diver:</h1></label><br />
+          <div class="radio">
+            <input id="#diver1" type="radio" name="diver" value="diver1" /><img
+              src="images/diver1.png"
+            />
+          </div>
+          <div class="radio">
+            <input id="diver3" type="radio" name="diver" value="diver3" /><img
+              src="images/diver3.png"
+            />
+          </div>
+          <br />
+          <button id="start-game-button" class="btn btn-default btn-lg">
+            START GAME
+          </button>
+        </div>
+      </div>
+
+      <div class="next-level-box">
+        <p>Well done! Ready for the next level?</p>
+        <br />
+        <button id="next-level-button" class="btn btn-default btn-lg">
+          GO TO LEVEL <span id="level"></span>
+        </button>
+      </div>
+
+      <div class="game-over-box">
+        <h1>Game over :(</h1>
+        <br />
+        <p>
+          You made it to level <span id="final-level"></span> <br /><br />
+          Your highscore: <span id="highscore"></span>
+        </p>
+        <br />
+        <button class="restart-button btn btn-default btn-lg">
+          TRY AGAIN!
+        </button>
+        <button class="highscore-button btn btn-default btn-lg">
+          SHOW HIGHSCORE
+        </button>
+      </div>
+
+      <div class="highscore-box">
+        <h1>TOP 5</h1>
+        <div class="highscore">
+          <div class="highscore-left col-sm-6"><h2>Player</h2></div>
+          <div class="highscore-right col-sm-6"><h2>Level</h2></div>
+        </div>
+        <button class="restart-button btn btn-default btn-lg">NEW GAME</button>
+        <button id="clear-button" class="btn btn-default btn-lg">
+          CLEAR HIGHSCORE
+        </button>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,91 @@
+body {
+  background-image: url("./images/background.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #225e76;
+  font-family: Raleway;
+}
+
+canvas {
+  width: 100%;
+  height: auto;
+}
+
+img {
+  width: 40%;
+}
+
+.container {
+  padding: 0;
+}
+
+.form-control {
+  width: 50%;
+  text-align: left;
+  margin: auto;
+}
+
+.start-box,
+.next-level-box,
+.game-over-box,
+.highscore-box {
+  width: 60%;
+  margin: 10% auto;
+  text-align: center;
+  background-color: #092243;
+  color: white;
+  padding: 10%;
+  border-radius: 10px;
+}
+
+.start-box {
+  padding: 10%;
+}
+
+.enter-name,
+.pick-diver,
+.next-level,
+.next-level-box,
+.game-over-box,
+.score-box,
+.highscore-box,
+.credit,
+.instructions,
+.instructions2,
+#to-start-button {
+  display: none;
+}
+
+.score-box {
+  width: 100%;
+  color: white;
+  font-size: 20px;
+  padding: 10px;
+  margin: auto;
+}
+
+.level-box {
+  text-align: center;
+  font-weight: bold;
+  border-radius: 5px 20px 5px;
+  background-color: #092243;
+  height: 100px;
+  padding-top: 20px;
+  font-size: 40px;
+}
+
+.score-box-left {
+  background-color: #092243;
+  border-radius: 5px;
+  height: 100px;
+  padding: 10px 10px 0 20px;
+}
+
+.highscore {
+  font-size: 20px;
+}
+
+.btn {
+  margin: 5% 2.5%;
+}
